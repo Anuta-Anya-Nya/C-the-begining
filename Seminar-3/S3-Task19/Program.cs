@@ -1,5 +1,5 @@
 ﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-
+Console.Write("Введите пятизначное число: ");
 string numberStr = Convert.ToString(Math.Abs(Convert.ToInt32(Console.ReadLine()))); 
 while (numberStr.Length != 5) 
 {
@@ -14,8 +14,8 @@ if (int.Parse(numberStr[0].ToString()) == int.Parse(numberStr[4].ToString()) && 
 else {
     Console.WriteLine("Не является палиндромом");
 }
-
-/*int[] fiveNumbers = new int[5];
+// Решение 2, где пятизначное число это массив из 5 цифр
+/* int[] fiveNumbers = new int[5];
 for (int i = 0; i < 5; i++)
 {
     Console.Write($"Введите цифру {i + 1}: ");
