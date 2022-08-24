@@ -16,4 +16,5 @@ void Fibon(int N)
         Console.Write(array[i] + " ");
     }
 }
-Fibon(7);
+Console.Write("Введите число: ");
+Fibon(Convert.ToInt32(Console.ReadLine()));

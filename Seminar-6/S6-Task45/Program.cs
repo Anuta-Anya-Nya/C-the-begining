@@ -13,7 +13,7 @@ int[] FillArrNumb(int leng, int numMin, int numMax) // создает масси
     }
     return array;
 }
-int[] copyArray(int[] collect) //void???
+int[] copyArrNumb(int[] collect) //void???
 {
     int[] newArray = new int[collect.Length];
     for (int i = 0; i < collect.Length; i++)
@@ -22,6 +22,10 @@ int[] copyArray(int[] collect) //void???
     }
     return newArray;
 }
-int[] someNumbers = FillArrNumb(15, 0, 10);
-Console.WriteLine($"[{String.Join(", ", someNumbers)}]");
-Console.WriteLine($"[{String.Join(", ", copyArray(someNumbers))}]"); //разобраться, какая функция void
+const int LENG = 15;
+const int MIN_NUMB = 0;
+const int MAX_NUMB = 10;
+int[] arrNumbers = FillArrNumb(LENG, MIN_NUMB, MAX_NUMB);
+int[] copyArrNumbers = copyArrNumb(arrNumbers);
+Console.WriteLine($"[{String.Join(", ", arrNumbers)}]");
+Console.WriteLine($"[{String.Join(", ", copyArrNumbers)}]");
